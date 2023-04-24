@@ -12,12 +12,12 @@ const List = () => {
     try {
       const response = await fetch("https://api.github.com/users/devpass-tech/repos");
       const data = await response.json();
-      setRepositories(data); // preenche a lista de repositórios
+      setRepositories(data);
     } catch (error) {
       console.error(error);
     }
 
-    setIsLoading(false); // desativa o Spinner
+    setIsLoading(false);
   };
 
   return (
