@@ -30,7 +30,8 @@ const List = () => {
           (
             <ListGroup className="repositoriesList">
 
-              { /* TODO */}
+              {<ListGroup.Item key={repo.id}>{repo.name}</ListGroup.Item>
+}
 
             </ListGroup>)}
         <Button data-testid="button" className="button" variant="primary" onClick={() => fetchRepositories()}>Fetch repositories</Button>
